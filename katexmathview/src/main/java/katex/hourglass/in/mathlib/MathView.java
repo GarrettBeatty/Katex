@@ -119,6 +119,15 @@ public class MathView extends WebView {
                 "        <script>\n" +
                 "          renderMathInElement(\n" +
                 "              document.body\n" +
+                ",\n" +
+                "          {\n" +
+                "              delimiters: [\n" +
+                "                  {left: \"$$\", right: \"$$\", display: true},\n" +
+                "                  {left: \"\\\\[\", right: \"\\\\]\", display: true},\n" +
+                "                  {left: \"$\", right: \"$\", display: false},\n" +
+                "                  {left: \"\\\\(\", right: \"\\\\)\", display: false}\n" +
+                "              ]\n" +
+                "          }" +
                 "          );\n" +
                 "        </script>\n" +
                 "    </body>\n" +
